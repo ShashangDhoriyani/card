@@ -1,0 +1,154 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- displays site properly based on user's device -->
+
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="./images/favicon-32x32.png"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.google.com/specimen/Montserrat"
+        
+      />
+      <link rel="stylesheet" href="https://fonts.google.com/share?selection.family=Fraunces:ital,opsz,wght@1,9..144,700 "/>
+
+      <title>Frontend Mentor | Product preview card component</title>
+
+      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+      <style>
+        body {
+          background-color: hsl(30, 38%, 92%);
+              }
+        .main {
+          display: flex;
+          width: 500px;
+          margin: auto;
+          background-color: hsl(0, 0%, 100%);
+        border:100px;
+        border-radius: 20px;         
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        flex-direction: row;
+        height: 400px;
+        }
+      @media screen and  (max-width: 375px){
+        .image{
+          display:none!important;
+        }
+        .imagem{
+          display: flex!important;
+        
+        }
+        .main{
+          flex-direction: column !important;
+          position:static;
+          height: auto;
+          width: 250px;
+          height: 800px;
+          
+        }
+        .right{
+    flex-direction: column;
+    height: 350px;
+    width: 250px;
+  }
+      }
+
+        .title {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          margin: 20px 10px;
+        }
+        .head {
+          font-family: cursive;
+          font-weight: 700;
+          font-size: 34px;
+          margin: 20px 10px;
+        }
+        .des {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 14px;
+          margin: 20px 10px;
+        }
+        .price {
+          font-weight: 700;
+          color: hsl(158, 36%, 37%);
+          margin: 20px 10px;
+
+        }
+        .strike{
+          font-size: 12px;
+          color:black;
+        }
+        .button {
+          width: 90%;
+          height: 2em;
+          background-color: hsl(158, 36%, 37%);
+          margin: auto;
+          text-align: center;
+          padding-top: 10px;
+          border-radius: 5px;
+          color: white;
+          
+        }
+        image {
+          height: 400px;
+          width: 250px;
+          border-radius: 20px;      
+        }
+      .imagem{
+        display: none;
+        width: 250px;
+        height: 350px;
+        object-fit:fill;
+        
+      }
+        
+        
+      </style>
+    </head>
+    <body>
+      <div class="main">
+        <div class="left">
+          <div class="image">
+            <img
+              src="images/image-product-desktop.jpg"
+              width="250px"
+              height="400px"
+              alt=""
+            /> </div>
+            <div class="imagem">
+            <img
+            src="images/image-product-mobile.jpg"
+            width="250px"
+            height="350px"
+            alt=""
+          />
+      
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">P E R F U M E</div>
+          <div class="head">Gabrielle Essence Eau De Parfum</div>
+          <div class="des">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </div>
+          <div class="price">$149.99 <span class="strike"> <strike>$169.99</strike></span></div>
+          <div class="button"> <img src="images/icon-cart.svg" height="14px" width="14px" alt=""> Add to Cart</div>
+
+        
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
